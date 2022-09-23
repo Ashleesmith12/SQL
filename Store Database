@@ -1,0 +1,21 @@
+CREATE TABLE toys (ID INTEGER, Price INTEGER, Name TEXT, Average_age INTEGER, Brand TEXT);
+
+INSERT INTO toys VALUES (1,6, "Barbie doll", 5, "Mattel");
+INSERT INTO toys VALUES (2, 70, "Lego set", 12, "Lego"); 
+INSERT INTO toys VALUES (3, 17, "Nerf gun", 14, "Hasbro"); 
+INSERT INTO toys VALUEs (4, 30, "Sit and ride lion", 1, "Fisher price"); 
+INSERT INTO toys VALUES (5, 10, "Hot wheels car", 5, "Mattel"); 
+INSERT INTO toys VALUES (6, 35, "Furby", 7, "Hasbro");
+INSERT INTO toys VALUES (7, 3, "Playdough", 4, "Crayola");
+INSERT INTO toys VALUES (8, 40, "Princess dress", 6, "Disney"); 
+INSERT INTO toys VALUES (9, 200, "Doll house", 7, "Mattel"); 
+INSERT INTO toys VALUES (10, 20, "Baby alive", 3, "Hasbro"); 
+INSERT INTO toys VALUES (11, 40, "Razor scooter", 9, "Mattel"); 
+INSERT INTO toys VALUES (12, 15, "Hulk Figure", 10, "Marvel"); 
+INSERT INTO toys VALUES (13, 25, "Lincon logs", 9, "Lincon logs"); 
+INSERT INTO toys VALUES (14, 20, "Tamagotchi", 10, "Bandai"); 
+INSERT INTO toys VALUES (15, 9, "Crayon art set", 4, "Crayola"); 
+
+SELECT * FROM toys WHERE Price ORDER BY price desc; 
+
+SELECT Brand, SUM(Price) FROM toys GROUP BY brand; 
